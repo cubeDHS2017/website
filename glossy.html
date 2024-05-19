@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Glossy Test Page</title>
+      </head> 
+   <body>
+
+
+    <style>
+    body {
+
+        background: rgb(238,174,202);
+        background: linear-gradient(72deg, rgba(238,174,202,1) 0%, rgba(203,179,214,1) 43%, rgba(179,182,223,1) 66%, rgba(166,184,227,1) 84%, rgba(148,187,233,1) 100%); 
+
+
+        /* Keep the inherited background full size. */
+        background-attachment: fixed; 
+        background-size: cover;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        align-items: flex-start;
+        size: 20px;
+
+        overflow: hidden; /* Hide scrollbars */
+    }
+
+    footer {
+        align-items: center;
+    }
+
+    .container {
+        width: 118rem;
+        height: 4rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, .15);
+
+        position:fixed;
+        margin-top: 5px;
+        
+        backdrop-filter: blur(7px);
+    }
+
+    .main {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 26px;
+    }
+
+
+    </style>
+
+    <div class="container">
+        <div>
+
+            <h1 class="text">
+                Testing
+            </h1>
+
+        </div>
+    </div>
+
+    <div class="main">
+        This is a text box with some content
+    </div>
+           
+    </body>
+</html>

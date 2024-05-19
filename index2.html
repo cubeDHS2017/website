@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<script src="myScript.js" ></script>
+<html class="bg">
+   <head>
+      <title>Cube's Corner</title>
+      <link rel="icon" type="image/png" href="/assets/android-chrome-512x512.png">
+      </head> 
+   <body>
+
+   <script type = "text/Javascript" src="music.js"></script>
+
+   
+
+   <style>
+
+   @keyframes Header1 {
+      from {color: red;}
+      to {color: yellow;}
+   }
+
+   html {
+      cursor: url('green-cursor.png'), auto;
+   }
+   .bg {
+      background-image: url('pic.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+   }
+
+   body {
+      padding: 3px 3px 3px 3px;
+      background-color: rgb(227, 235, 227);
+
+      width: 800px;
+
+      margin-bottom: 3px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px 0px 0px 0px;
+
+      border-width: 10px;
+      border-color: #5a473c;
+      border-style: dashed;
+
+      font-family: Verdana;
+      font-size: 14;
+      text-align: center;
+   }
+
+   h1 {
+      animation-name: Header1;
+      animation-duration: 1.3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+   footer {
+      color: rgb(148, 124, 92);
+   }
+
+   a:hover {
+      color: var(--green);
+      cursor: url("grayhand.png"), auto;
+   }
+
+   .hovered {
+      cursor: url("grayhand.png"), auto;
+   }
+
+   .cursorpoint {
+      cursor: url("grayhand.png"), auto;
+   }
+
+
+   #game {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   canvas {
+      width: 100%;
+      height: 100%;
+   }
+
+   </style>
+
+      <header>   
+      <h1 style="color:green;">Douglas' Website</h1>
+      <nav>
+         <a href=”domain.tld/test”>Test</a>
+      </nav>
+      <br>
+      This webpage is purely a hobby project. Along with creating this website I enjoy tinkering with my homelab.
+      </header>
+      <main >
+         <div class=”row">
+            <div class=”post-text-box”>
+               <h1></h1>
+               <section>
+                  <h1 id="network">Test Section</h1>
+
+                  
+                  <script>
+                     // Get the text element by its ID
+                     const textElement = document.getElementById('network');
+                 
+                     // Add an event listener for the 'click' event
+                     textElement.addEventListener('click', () => {
+                         // Change the text color
+                         textElement.style.color = 'red';
+                     });
+                 </script>
+
+
+                  <h2>Play music</h2>
+
+                  <audio id="audio" src="music/19. Sand Canyon 2.mp3"></audio>
+
+                  <button type="button" value="PLAY" onclick="play()" style="background-color: red;">
+                     <img src="play-button.png" style="height:12px">
+                  </button> 
+
+                  <button type="button" value="Pause" onclick="pause()" style="background-color: red;">
+                     <img src="assets/pause.png" style="height:12px">
+                  </button> 
+
+                  <p>This is where the stats would go once I get that figured out.</p>
+               </section>
+            </div>
+         </div>
+         
+
+         <div id="game">
+
+            <canvas id="gameCanvas" ></canvas>
+
+            <!-- Game code right here -->
+   
+            <script src="game.js"></script>
+
+
+         </div>   
+      </main>
+      <footer>
+         This website was created just by using HTML, CSS, and Javascript. Nothing else is needed when making a website all else it bloat.
+         <br>
+         <img src="handcoded.gif">
+         <a href="https://dokode.moe/">
+            <img src="dokodemobutton3.gif">
+         </a>
+         <img src="cube-plate.gif">
+         <img src="plates/windows.gif">
+         <br>
+         Links
+         <br>
+         Last update: 5/17/2024
+      </footer>
+    </body>
+</html>
